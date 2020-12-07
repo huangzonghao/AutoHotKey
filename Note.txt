@@ -1,0 +1,1 @@
+To place a new script in the start up folder. Lanuch Run, then shell:startup. this will open the startup folder for you. then you can paste only the shortcut of the actual script to the startup folder
