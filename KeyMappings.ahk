@@ -6,14 +6,15 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #SingleInstance force
-
+#MaxHotkeysPerInterval 9999
 
 ; Note not all key mappings used on this system is listed here. some are set directly with sharpkeys and were written to registry
-Pause::Volume_Up
 Home::Media_Play_Pause
-End::Delete
-Insert::PgUp
-Delete::PgDn
+;Pause::Volume_Up
+;ScrollLock::Volume_Down
+;End::Delete
+;Insert::PgUp
+;Delete::PgDn
 
 $WheelUp::
 Send {WheelDown}
