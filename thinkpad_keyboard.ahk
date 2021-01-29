@@ -7,13 +7,13 @@ Hotkey, $*MButton Up, MButtonup, off
 KeyWait, MButton, T0.2
 If ErrorLevel = 1
 {
-	Hotkey, $*MButton Up, MButtonup, on
-	MouseGetPos, ox, oy
- 	SetTimer, WatchTheMouse, 5
-	SystemCursor("Toggle")
+    Hotkey, $*MButton Up, MButtonup, on
+    MouseGetPos, ox, oy
+    SetTimer, WatchTheMouse, 5
+    SystemCursor("Toggle")
 }
 Else
-	Send {MButton}
+    Send {MButton}
 return
 
 MButtonup:
@@ -28,25 +28,25 @@ dy := ny-oy
 dx := nx-ox
 If (dx**2 > 0 and dx**2>dy**2) ;edit 4 for sensitivity (changes sensitivity to movement)
 {
-	times := Abs(dy)/1 ;edit 1 for sensitivity (changes frequency of scroll signal)
-	Loop, %times%
-	{
-		If (dx > 0)
-			Click WheelRight
-		Else
-			Click WheelLeft
-   	}
+    times := Abs(dy)/1 ;edit 1 for sensitivity (changes frequency of scroll signal)
+    Loop, %times%
+    {
+        If (dx > 0)
+            Click WheelRight
+        Else
+            Click WheelLeft
+    }
 }
 If (dy**2 > 0 and dy**2>dx**2) ;edit 0 for sensitivity (changes sensitivity to movement)
 {
-	times := Abs(dy)/1 ;edit 1 for sensitivity (changes frequency of scroll signal)
-	Loop, %times% 
-	{
-		If (dy > 0)
-			Click WheelDown
-		Else
-			Click WheelUp
-	}   
+    times := Abs(dy)/1 ;edit 1 for sensitivity (changes frequency of scroll signal)
+    Loop, %times%
+    {
+        If (dy > 0)
+            Click WheelDown
+        Else
+            Click WheelUp
+    }
 }
 MouseMove ox, oy
 return
