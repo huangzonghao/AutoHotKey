@@ -8,13 +8,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance force
 #MaxHotkeysPerInterval 9999
 
-; Note not all key mappings used on this system is listed here. some are set directly with sharpkeys and were written to registry
-Home::Media_Play_Pause
-;Pause::Volume_Up
-;ScrollLock::Volume_Down
-;End::Delete
-;Insert::PgUp
-;Delete::PgDn
+; Multimedia Mappings
+; Key Names:
+;     Home, End, Insert,
+;     PrintScreen, ScrollLock,
+;     Pause, Delete, PgUp, PgDn,
+;     Media_Play_Pause, Media_Prev, Media_Next,
+;     Volume_Up, Volume_Down, Volume_Mute
 
 $WheelUp::
 Send {WheelDown}
