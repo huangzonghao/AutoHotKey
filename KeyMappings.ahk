@@ -27,6 +27,10 @@ Return
 ^!h::Send {Ctrl Down}{LWin Down}{Left}{Ctrl Up}{LWin Up}
 ^!l::Send {Ctrl Down}{LWin Down}{Right}{Ctrl Up}{LWin Up}
 
+; for eudic
+; need to release {LWin} first, otherwise Win+Ctrl+Alt+Shift will trigger office
+^#Space::Send {LWin Up}{Ctrl Down}{Shift Down}{Alt Down}{Space}{Ctrl Up}{Shift Up}{Alt Up}
+
 #IfWinActive ahk_exe chrome.exe
 !h::Send {Ctrl Down}{PgUp}{Ctrl Up}
 !l::Send {Ctrl Down}{PgDn}{Ctrl Up}
