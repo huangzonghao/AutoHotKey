@@ -13,6 +13,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;     Home, End, Insert,
 ;     PrintScreen, ScrollLock,
 ;     Pause, Delete, PgUp, PgDn,
+;     NumpadMult, NumpadAdd, NumpadSub
 ;     Media_Play_Pause, Media_Prev, Media_Next,
 ;     Volume_Up, Volume_Down, Volume_Mute
 
