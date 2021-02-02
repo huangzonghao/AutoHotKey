@@ -27,6 +27,9 @@ Return
 
 ^!h::Send {Ctrl Down}{LWin Down}{Left}{Ctrl Up}{LWin Up}
 ^!l::Send {Ctrl Down}{LWin Down}{Right}{Ctrl Up}{LWin Up}
++#h::Send {LWin Down}{Left}{LWin Up}
++#l::Send {LWin Down}{Right}{LWin Up}
++#f::Send {LWin Down}{Up}{LWin Up}
 
 ; for eudic
 ; need to release {LWin} first, otherwise Win+Ctrl+Alt+Shift will trigger office
