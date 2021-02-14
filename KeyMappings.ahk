@@ -48,4 +48,7 @@ Return
 ^h::Send {Left Down}{Left Up}
 ^l::Send {Right Down}{Right Up}
 #w::Send {Alt Down}w{Alt Up}
-#IfWinActive
+
+#IfWinActive ahk_exe SLDWORKS.exe
+XButton1::Enter
+XButton2::Escape
