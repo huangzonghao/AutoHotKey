@@ -31,6 +31,8 @@ Return
 +#l::Send {LWin Down}{Right}{LWin Up}
 +#f::Send {LWin Down}{Up}{LWin Up}
 
+^Space::  Winset, Alwaysontop, , A
+
 ; for eudic
 ; need to release {LWin} first, otherwise Win+Ctrl+Alt+Shift will trigger office
 ^#Space::Send {LWin Up}{Ctrl Down}{Shift Down}{Alt Down}{Space}{Ctrl Up}{Shift Up}{Alt Up}
