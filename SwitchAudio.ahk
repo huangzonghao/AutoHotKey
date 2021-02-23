@@ -52,6 +52,15 @@ if (idx > 3)
     idx := 1 ; the index of ahk array starts at 1
 
 SetDefaultEndpoint(Devices_IDs[idx])
+return
+
+End::
+idx -= 1
+if (idx < 1)
+    idx := 3
+
+SetDefaultEndpoint(Devices_IDs[idx])
+return
 
 ; if (idx = "0")
 ;   SetDefaultEndpoint(GetDeviceID(Devices, "27V2G5"))
