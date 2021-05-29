@@ -17,6 +17,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;     Media_Play_Pause, Media_Prev, Media_Next,
 ;     Volume_Up, Volume_Down, Volume_Mute
 
+!F1::
+Winget,AppName,ProcessName,A
+MsgBox,% AppName
 $WheelUp::
 Send {WheelDown}
 Return
