@@ -62,3 +62,7 @@ WheelLeft::+u
 WheelRight::^z
 XButton1::t
 XButton2::Esc
+
+#IfWinActive ahk_exe devenv.exe
+!h::Send {Ctrl Down}{Alt Down}{PgUp}{Ctrl Up}{Alt Up}
+!l::Send {Ctrl Down}{Alt Down}{PgDn}{Ctrl Up}{Alt Up}
