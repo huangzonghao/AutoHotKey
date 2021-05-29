@@ -45,12 +45,20 @@ Return
 !u::Send {Ctrl Down}l{Ctrl Up}
 !p::Send {Ctrl Down}p{Ctrl Up}
 !n::Send {Ctrl Down}n{Ctrl Up}
+!f::Send {Ctrl Down}f{Ctrl Up}
 ^p::Send {Up Down}{Up Up}
 ^n::Send {Down Down}{Down Up}
-^h::Send {Left Down}{Left Up}
-^l::Send {Right Down}{Right Up}
+^b::Send {Left Down}{Left Up}
+^f::Send {Right Down}{Right Up}
 #w::Send {Alt Down}w{Alt Up}
 
 #IfWinActive ahk_exe SLDWORKS.exe
 XButton1::Enter
 XButton2::Escape
+
+#IfWinActive ahk_exe FoxitReader.exe
+MButton::u
+WheelLeft::+u
+WheelRight::^z
+XButton1::t
+XButton2::Esc
