@@ -55,6 +55,21 @@ Return
 ^f::Send {Right Down}{Right Up}
 #w::Send {Alt Down}w{Alt Up}
 
+#IfWinActive ahk_exe firefox.exe
+!h::Send {Ctrl Down}{PgUp}{Ctrl Up}
+!l::Send {Ctrl Down}{PgDn}{Ctrl Up}
+!t::Send {Ctrl Down}t{Ctrl Up}
+!w::Send {Ctrl Down}w{Ctrl Up}
+!u::Send {Ctrl Down}l{Ctrl Up}
+!p::Send {Ctrl Down}p{Ctrl Up}
+!n::Send {Ctrl Down}n{Ctrl Up}
+!f::Send {Ctrl Down}f{Ctrl Up}
+^p::Send {Up Down}{Up Up}
+^n::Send {Down Down}{Down Up}
+^b::Send {Left Down}{Left Up}
+^f::Send {Right Down}{Right Up}
+#w::Send {Alt Down}w{Alt Up}
+
 #IfWinActive ahk_exe SLDWORKS.exe
 XButton1::Enter
 XButton2::Escape
@@ -69,3 +84,7 @@ XButton2::Esc
 #IfWinActive ahk_exe devenv.exe
 !h::Send {Ctrl Down}{Alt Down}{PgUp}{Ctrl Up}{Alt Up}
 !l::Send {Ctrl Down}{Alt Down}{PgDn}{Ctrl Up}{Alt Up}
+
+#IfWinActive ahk_exe WeChat.exe
+^p::Send {Up Down}{Up Up}
+^n::Send {Down Down}{Down Up}
