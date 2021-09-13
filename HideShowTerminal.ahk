@@ -45,7 +45,7 @@ ToggleTerminal()
     }
     else
     {
-        Run "c:\Users\Andrew\AppData\Local\Microsoft\WindowsApps\wt.exe"
+        Run "c:\Users\huangzonghao\AppData\Local\Microsoft\WindowsApps\wt.exe"
         ;Sleep, 10
         ShowAndPositionTerminal()
     }
