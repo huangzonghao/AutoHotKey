@@ -24,13 +24,13 @@ MsgBox,% AppName
 !F2::
 WinGetTitle, TitleName, A
 MsgBox, % TitleName
-$WheelUp::
-Send {WheelDown}
-Return
+; $WheelUp::
+; Send {WheelDown}
+; Return
 
-$WheelDown::
-Send {WheelUp}
-Return
+; $WheelDown::
+; Send {WheelUp}
+; Return
 
 ^!h::Send {Ctrl Down}{LWin Down}{Left}{Ctrl Up}{LWin Up}
 ^!l::Send {Ctrl Down}{LWin Down}{Right}{Ctrl Up}{LWin Up}
