@@ -42,7 +42,7 @@ Return
 
 ; for eudic
 ; need to release {LWin} first, otherwise Win+Ctrl+Alt+Shift will trigger office
-^LWin::Send {LWin Up}{Ctrl Down}{Shift Down}{Alt Down}{Space}{Ctrl Up}{Shift Up}{Alt Up}
+^#e::Send {LWin Up}{Ctrl Down}{Shift Down}{Alt Down}{Space}{Ctrl Up}{Shift Up}{Alt Up}
 
 #IfWinActive ahk_exe chrome.exe
 !h::Send {Ctrl Down}{PgUp}{Ctrl Up}
