@@ -20,10 +20,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 !F1::
 WinGet, AppName, ProcessName, A
 MsgBox,% AppName
+Return
 
 !F2::
 WinGetTitle, TitleName, A
 MsgBox, % TitleName
+Return
 ; $WheelUp::
 ; Send {WheelDown}
 ; Return
