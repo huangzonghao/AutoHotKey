@@ -94,3 +94,7 @@ XButton2::Esc
 #IfWinActive ahk_exe WeChat.exe
 ^p::Send {Up Down}{Up Up}
 ^n::Send {Down Down}{Down Up}
+
+#IfWinActive ahk_exe MATLAB.exe
+^p::Send {Up Down}{Up Up}
+^n::Send {Down Down}{Down Up}
