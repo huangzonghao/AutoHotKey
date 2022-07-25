@@ -99,3 +99,7 @@ XButton2::Esc
 #IfWinActive ahk_exe MATLAB.exe
 ^p::Send {Up Down}{Up Up}
 ^n::Send {Down Down}{Down Up}
+
+#IfWinActive ahk_exe Acrobat.exe
+!h::Send {Ctrl Down}{Shift Down}{Tab}{Ctrl Up}{Shift Up}
+!l::Send {Ctrl Down}{Tab}{Ctrl Up}
