@@ -43,9 +43,8 @@ Return
 ^!Space::  Winset, Alwaysontop, , A
 
 ; for eudic
-; need to release {LWin} first, otherwise Win+Ctrl+Alt+Shift will trigger office
-; ^#e::Send {LWin Up}{Ctrl Down}{Shift Down}{Alt Down}{Space}{Ctrl Up}{Shift Up}{Alt Up}
-^#Enter::Send {LWin Up}{Ctrl Down}{Shift Down}{Alt Down}{Space}{Ctrl Up}{Shift Up}{Alt Up}
+; Map eudic hotkey to Ctrl + Shift + Space
+^#e::Send {Ctrl Down}{Shift Down}{Space}{Ctrl Up}{Shift Up}
 
 #IfWinActive ahk_exe chrome.exe
 !h::Send {Ctrl Down}{PgUp}{Ctrl Up}
