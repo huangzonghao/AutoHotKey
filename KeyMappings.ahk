@@ -102,3 +102,9 @@ XButton2::Esc
 #IfWinActive ahk_exe Acrobat.exe
 !h::Send {Ctrl Down}{Shift Down}{Tab}{Ctrl Up}{Shift Up}
 !l::Send {Ctrl Down}{Tab}{Ctrl Up}
+
+#IfWinActive ahk_exe WindowsTerminal.exe
+#h::Send {LWin Up}{Alt Down}{Left}{Alt Up}
+#l::Send {LWin Up}{Alt Down}{Right}{Alt Up}
+#j::Send {LWin Up}{Alt Down}{Down}{Alt Up}
+#k::Send {LWin Up}{Alt Down}{Up}{Alt Up}
