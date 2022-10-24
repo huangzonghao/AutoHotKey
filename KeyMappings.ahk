@@ -8,6 +8,10 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance force
 #MaxHotkeysPerInterval 9999
 
+; Definitions of groups
+GroupAdd, Matlab, ahk_exe MATLAB.exe
+GroupAdd, Matlab, ahk_exe MATLABWindow.exe
+
 ; Multimedia Mappings
 ; Key Names:
 ;     Home, End, Insert,
@@ -113,3 +117,8 @@ XButton2::Esc
 #l::Send {LWin Up}{Alt Down}{Right}{Alt Up}
 #j::Send {LWin Up}{Alt Down}{Down}{Alt Up}
 #k::Send {LWin Up}{Alt Down}{Up}{Alt Up}
+
+#IfWinActive ahk_group Matlab
+!c::Send {Ctrl Down}c{Ctrl Up}
+!v::Send {Ctrl Down}v{Ctrl Up}
+!z::Send {Ctrl Down}z{Ctrl Up}
