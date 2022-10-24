@@ -60,6 +60,8 @@ Return
 ^b::Send {Left Down}{Left Up}
 ^f::Send {Right Down}{Right Up}
 #w::Send {Alt Down}w{Alt Up}
+!c::Send {Ctrl Down}c{Ctrl Up}
+!v::Send {Ctrl Down}v{Ctrl Up}
 
 #IfWinActive ahk_exe firefox.exe
 !h::Send {Ctrl Down}{PgUp}{Ctrl Up}
@@ -75,6 +77,8 @@ Return
 ^b::Send {Left Down}{Left Up}
 ^f::Send {Right Down}{Right Up}
 #w::Send {Alt Down}w{Alt Up}
+!c::Send {Ctrl Down}c{Ctrl Up}
+!v::Send {Ctrl Down}v{Ctrl Up}
 
 #IfWinActive ahk_exe SLDWORKS.exe
 XButton1::Enter
