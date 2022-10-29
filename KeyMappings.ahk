@@ -67,6 +67,7 @@ Return
 #w::Send {Alt Down}w{Alt Up}
 !c::Send {Ctrl Down}c{Ctrl Up}
 !v::Send {Ctrl Down}v{Ctrl Up}
+F4::^B
 
 #IfWinActive ahk_exe firefox.exe
 !h::Send {Ctrl Down}{PgUp}{Ctrl Up}
