@@ -123,3 +123,7 @@ XButton2::Esc
 !c::Send {Ctrl Down}c{Ctrl Up}
 !v::Send {Ctrl Down}v{Ctrl Up}
 !z::Send {Ctrl Down}z{Ctrl Up}
+
+#IfWinActive ahk_exe ONENOTE.exe
++WheelDown::WheelRight
++WheelUp::WheelLeft
