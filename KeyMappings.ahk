@@ -30,6 +30,9 @@ Return
 WinGetTitle, TitleName, A
 MsgBox, % TitleName
 Return
+
+!F3:: Reload
+
 ; $WheelUp::
 ; Send {WheelDown}
 ; Return
