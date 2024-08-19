@@ -110,10 +110,6 @@ XButton2::Esc
 ^p::Send("{Up Down}{Up Up}")
 ^n::Send("{Down Down}{Down Up}")
 
-#HotIf WinActive("ahk_exe MATLAB.exe")
-^p::Send("{Up Down}{Up Up}")
-^n::Send("{Down Down}{Down Up}")
-
 #HotIf WinActive("ahk_exe Acrobat.exe")
 !h::Send("{Ctrl Down}{Shift Down}{Tab}{Ctrl Up}{Shift Up}")
 !l::Send("{Ctrl Down}{Tab}{Ctrl Up}")
@@ -125,6 +121,8 @@ XButton2::Esc
 #k::Send("{LWin Up}{Alt Down}{Up}{Alt Up}")
 
 #HotIf WinActive("ahk_group Matlab")
+^p::Send("{Up Down}{Up Up}")
+^n::Send("{Down Down}{Down Up}")
 !c::Send("{Ctrl Down}c{Ctrl Up}")
 !v::Send("{Ctrl Down}v{Ctrl Up}")
 !z::Send("{Ctrl Down}z{Ctrl Up}")
