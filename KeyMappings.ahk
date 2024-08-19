@@ -22,14 +22,15 @@ GroupAdd("Matlab", "ahk_exe MATLABWindow.exe")
 
 !F1::
 {
-    AppName := WinGetProcessName("A")
-    MsgBox(AppName)
+    ExeName := WinGetProcessName("A")
+    TitleName := WinGetTitle("A")
+    ClassName := WinGetClass("A")
+    MsgBox("ExeName: " ExeName "`nTitle Name: " TitleName "`nClass Name: " ClassName)
 }
 
 !F2::
 {
-    TitleName := WinGetTitle("A")
-    MsgBox(TitleName)
+    Run("C:\Program Files\AutoHotkey\WindowSpy.ahk")
 }
 
 !F3::Reload()
