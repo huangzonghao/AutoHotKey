@@ -48,7 +48,5 @@ ToggleTerminal()
     else
     {
         Run("c:\Users\huangzonghao\AppData\Local\Microsoft\WindowsApps\wt.exe")
-        ;Sleep, 10
-        ShowAndPositionTerminal()
     }
 }
