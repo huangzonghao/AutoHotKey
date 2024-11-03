@@ -19,6 +19,8 @@ GroupAdd("Matlab", "ahk_exe MATLABWindow.exe")
 ;     NumpadMult, NumpadAdd, NumpadSub
 ;     Media_Play_Pause, Media_Prev, Media_Next,
 ;     Volume_Up, Volume_Down, Volume_Mute
+;     MButton, XButton1(rear), XButton2(front)
+;     WheelUp, WheelDown, WheelLeft, WheelRight
 
 !F1::
 {
