@@ -75,6 +75,7 @@ GroupAdd("Matlab", "ahk_exe MATLABWindow.exe")
 !c::Send("{Ctrl Down}c{Ctrl Up}")
 !v::Send("{Ctrl Down}v{Ctrl Up}")
 F4::^B
+XButton2::MButton
 
 #HotIf WinActive("ahk_exe firefox.exe")
 !h::Send("{Ctrl Down}{PgUp}{Ctrl Up}")
@@ -92,6 +93,7 @@ F4::^B
 #w::Send("{Alt Down}w{Alt Up}")
 !c::Send("{Ctrl Down}c{Ctrl Up}")
 !v::Send("{Ctrl Down}v{Ctrl Up}")
+XButton2::MButton
 
 #HotIf WinActive("ahk_exe SLDWORKS.exe")
 XButton1::Enter
@@ -132,3 +134,6 @@ XButton2::Esc
 #HotIf WinActive("ahk_exe ONENOTE.exe")
 +WheelDown::WheelRight
 +WheelUp::WheelLeft
+
+#HotIf WinActive("ahk_exe Overwatch.exe")
+LWin::return
