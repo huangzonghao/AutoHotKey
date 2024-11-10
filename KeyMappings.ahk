@@ -29,13 +29,13 @@ GroupAdd("Matlab", "ahk_exe MATLABWindow.exe")
     ClassName := WinGetClass("A")
     MsgBox("ExeName: " ExeName "`nTitle Name: " TitleName "`nClass Name: " ClassName)
 }
-
 !F2::
 {
     Run("C:\Program Files\AutoHotkey\WindowSpy.ahk")
 }
-
 !F3::Reload()
+!F5::Mbutton
+!F6::Send("{Alt Up}{Ctrl Up}{Win Up}{Shift Up}")
 
 ; $WheelUp::
 ; Send {WheelDown}
